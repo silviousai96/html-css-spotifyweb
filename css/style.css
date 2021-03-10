@@ -1,0 +1,57 @@
+/*RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+    
+}
+
+/*COMMON*/
+
+body {
+    /*test*/
+    color: white;
+}
+
+.app-wrapper {
+    width: 100%;
+    height: 100vh;
+}
+/*MAIN*/
+main {
+    height: calc( 100% -  100px );
+    
+    /*test*/
+    background-color: aqua;
+}
+
+/* nav */
+nav {
+    float: left;
+    height: 100%;
+    width: 220px;
+    overflow: hidden;    
+    background-color:black;
+}
+
+nav a {
+    color: white;
+}
+/*main-content*/
+
+.main-content {
+    float: left;
+    height: 100%;
+    width: calc( 100% -  220px );
+    overflow-y: auto;
+    background-color: #141922;
+}
+
+/*FOOTER*/
+footer {
+    /*test*/
+    background-color: #282828;
+    height: 100px;
+}
