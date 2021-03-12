@@ -6,7 +6,9 @@
     font-family: 'Montserrat', sans-serif;        
 }
 
-
+img {
+    width: 100%;
+}
 /*COMMON*/
 
 body {
@@ -29,6 +31,27 @@ ul {
 
 .text-center {
     text-align: center;
+}
+
+.t-grey {
+    color: grey;
+}
+
+.t-white {
+    color: white;
+}
+
+/*MEDIA QUERIES */
+
+@media screen and (min-width: 639px) and (max-width: 878px) {
+    
+    .single-album {
+        width: calc(100% / 4);
+    }
+    
+    .album-row {
+        flex-wrap: wrap;
+    }
 }
 
 /*Upgrade (barra fissa sopra al main)*/
@@ -152,7 +175,8 @@ nav a {
     overflow-y: auto;
     background-color: #141922;
     padding-top: 100px;
-    padding-left: 10px;
+    padding-left: 15px;
+    padding-right: 10px;
 }
 
 /* top-menu*/
@@ -164,6 +188,7 @@ nav a {
 .menu-list {
     display: inline-block;
     padding-top: 20px;
+    text-align: center;
 }
 
 .menu-list li {
@@ -182,15 +207,63 @@ nav a {
     padding-top: 40px;
 }
 
-.recently-played img {
-    width: 15%;
+.recently-played h2 {
+    padding-bottom: 15px;
+}
+.album-row {
+    display: flex;
+    
 }
 
-.album-row {
+.single-album {
+    text-align: center;
+    width: calc( 100% / 6 );
+    padding-right: 15px;
+    font-size: 14px;
+}
+
+.single-album img {
+    width: 100%;
+}
+
+.single-album h3 {
+    padding: 10px 0;
+}
+
+/*created-for*/
+
+.created-for h2 {
+    padding-top: 20px;    
+}
+
+.created-for h4 {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.created-row {
+    display: flex;
+    
+}
+
+
+/*popular-artist*/
+.popular-artist h2 {
+    padding-top: 20px;    
+}
+
+.popular-artist h4 {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.popular-row {
     display: flex;
 }
 
-
+.popular-row img {
+    border-radius: 50%;
+}
 /*FOOTER*/
 footer {
     /*test*/
