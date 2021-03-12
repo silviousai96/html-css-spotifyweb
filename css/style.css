@@ -3,10 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    
-    
+    font-family: 'Montserrat', sans-serif;        
 }
+
 
 /*COMMON*/
 
@@ -23,6 +22,15 @@ body {
 a {
     text-decoration: none;
 }
+
+ul {
+    list-style-type: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
 /*Upgrade (barra fissa sopra al main)*/
 
 .upgrade {
@@ -30,9 +38,21 @@ a {
     top: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.6);
-    height: 70px;
+    height: 100px;
     width: calc( 100% -  220px );
     text-align: right;
+}
+.upgrade div {
+    padding-top: 25px;
+    padding-right: 20px;
+}
+.button {
+    display: inline-block;
+    color: white; 
+    border: 1px solid white;   
+    border-radius: 25px;
+    padding: 10px 30px;
+    text-decoration: none;
 }
 
 /*MAIN*/
@@ -43,18 +63,15 @@ main {
     background-color: aqua;
 }
 
-/* nav */
+/* Nav */
 nav {
     float: left;
     height: 100%;
     width: 220px;
     overflow: hidden;    
     background-color:black;
-
-}
-
-nav a {
-    color: white;
+    padding-left: 20px;
+    font-size: 13px;
 }
 
 .nav-container {
@@ -63,21 +80,70 @@ nav a {
     height: 100%;
 }
 
+nav a {
+    color: white;
+}
+
+/*main links*/ 
+
+.main-links {
+     padding: 10px 0;  
+ }
+
+ 
+.logo {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.logo img {
+    width: 80%;
+    
+}
+.main-links img {
+    width: 15%;
+}
+
+/*playlist container*/
 .playlist-container {
-    min-height: 100px;
+    min-height: 100px;    
     overflow: hidden;
     flex-grow: 1;
+    padding: 20px 0 ;
+}
+
+.fa-plus-square {
+    font-size: 40px;
+    
 }
 
 .playlist {
     height: 100%;
     overflow-y: auto;
+    
 }
 
-.install {
-
+.playlist li  {
+    padding: 10px 0;
 }
-/*main-content*/
+
+/*install*/
+
+.install div {
+    padding: 10px 0;
+    border-bottom: 1px solid grey;
+}
+
+.install h3 {
+    padding: 10px 0;
+}
+
+.fa-arrow-circle-down {
+    color: grey;
+    padding-right: 10px;
+}
+
+/*Main-Content*/
 
 .main-content {
     float: left;
@@ -86,7 +152,44 @@ nav a {
     overflow-y: auto;
     background-color: #141922;
     padding-top: 100px;
+    padding-left: 10px;
 }
+
+/* top-menu*/
+.top-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-list {
+    display: inline-block;
+    padding-top: 20px;
+}
+
+.menu-list li {
+    display: inline-block;
+    padding-right: 10px;
+    line-height: 20px;
+    
+}
+
+.menu-list li a {
+    color: grey;
+}
+
+/* recently-played*/
+.recently-played {
+    padding-top: 40px;
+}
+
+.recently-played img {
+    width: 15%;
+}
+
+.album-row {
+    display: flex;
+}
+
 
 /*FOOTER*/
 footer {
