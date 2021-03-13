@@ -41,19 +41,8 @@ ul {
     color: white;
 }
 
-/*MEDIA QUERIES */
 
-@media screen and (min-width: 639px) and (max-width: 878px) {
-    
-    .single-album {
-        width: calc(100% / 4);
-    }
-    
-    .album-row {
-        flex-wrap: wrap;
-    }
-}
-
+  
 /*Upgrade (barra fissa sopra al main)*/
 
 .upgrade {
@@ -219,7 +208,7 @@ nav a {
     text-align: center;
     width: calc( 100% / 6 );
     padding-right: 15px;
-    font-size: 14px;
+    font-size: 14px;    
 }
 
 .single-album img {
@@ -264,9 +253,67 @@ nav a {
 .popular-row img {
     border-radius: 50%;
 }
+
+/*Overlay effect */
+
+.img-container {
+    position: relative;
+}
+
+.img-container:hover img {
+    opacity: 0.3;
+    cursor: pointer;
+  }
+
+.overlay {  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);      
+  opacity: 0;
+}
+
+.overlay i {
+    font-size: 60px;
+}
+
+.img-container:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+  }
+
 /*FOOTER*/
 footer {
     /*test*/
     background-color: #282828;
     height: 100px;
+}
+
+
+
+
+
+
+/*MEDIA QUERIES */
+
+@media screen and (min-width: 639px) and (max-width: 878px) {
+    
+    .single-album {
+        width: calc(100% / 4);
+    }
+    
+    .album-row {
+        flex-wrap: wrap;
+    }
+}
+ 
+@media screen and (max-width: 639px) {
+    
+    .single-album {
+        width: calc(100% / 2);
+    }
+
+    .album-row {
+        flex-wrap: wrap;
+    }
 }
