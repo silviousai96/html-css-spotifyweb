@@ -53,6 +53,7 @@ ul {
     height: 100px;
     width: calc( 100% -  220px );
     text-align: right;
+    z-index: 1;
 }
 .upgrade div {
     padding-top: 25px;
@@ -70,9 +71,7 @@ ul {
 /*MAIN*/
 main {
     height: calc( 100% -  100px );
-    
-    /*test*/
-    background-color: aqua;
+        
 }
 
 /* Nav */
@@ -81,7 +80,7 @@ nav {
     height: 100%;
     width: 220px;
     overflow: hidden;    
-    background-color:black;
+    background-color:black;    
     padding-left: 20px;
     font-size: 13px;
 }
@@ -93,7 +92,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: grey;    
 }
 
 /*main links*/ 
@@ -108,25 +107,40 @@ nav a {
     padding-bottom: 10px;
 }
 
+.small-logo {
+    display: none;
+}
+
 .logo img {
     width: 80%;
     
 }
 .main-links img {
     width: 15%;
+    vertical-align: middle;
+}
+
+.main-links li {
+    padding-bottom: 10px;
 }
 
 /*playlist container*/
+
 .playlist-container {
     min-height: 100px;    
     overflow: hidden;
     flex-grow: 1;
-    padding: 20px 0 ;
+    padding-bottom: 20px;  ;
+}
+
+.playlist-container h2 {
+    padding-bottom: 10px;
 }
 
 .fa-plus-square {
     font-size: 40px;
-    
+    vertical-align: middle;
+    color: grey;
 }
 
 .playlist {
@@ -141,18 +155,35 @@ nav a {
 
 /*install*/
 
-.install div {
+.install-app {
     padding: 10px 0;
     border-bottom: 1px solid grey;
 }
 
-.install h3 {
+.install img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: grey;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.profile {
     padding: 10px 0;
 }
 
 .fa-arrow-circle-down {
     color: grey;
     padding-right: 10px;
+}
+
+.nav-container a:hover {
+    color: white;
+}
+
+.nav-container i:hover {
+    color: white;
 }
 
 /*Main-Content*/
@@ -189,6 +220,10 @@ nav a {
 
 .menu-list li a {
     color: grey;
+}
+
+.menu-list a:hover {
+    color: white;
 }
 
 /* recently-played*/
@@ -297,7 +332,7 @@ footer {
 /*MEDIA QUERIES */
 
 @media screen and (min-width: 639px) and (max-width: 878px) {
-    
+    /* per rendere gli album a gruppi di 4 */
     .single-album {
         width: calc(100% / 4);
     }
@@ -308,6 +343,7 @@ footer {
 }
  
 @media screen and (max-width: 639px) {
+    /* per rendere gli album a gruppi di 2 */
     
     .single-album {
         width: calc(100% / 2);
@@ -316,4 +352,57 @@ footer {
     .album-row {
         flex-wrap: wrap;
     }
+}
+
+@media screen and (max-width: 552px) {
+    /* per rendere il nav più piccolo e rendere visibili solo le icone, senza scritte */
+    
+    nav {
+        width: 80px;
+        padding: 0px;
+    }
+
+    .main-content {
+        width: calc( 100% -  80px );
+    }
+
+    .upgrade {
+        width: calc( 100% -  80px );
+    }
+    
+    .main-links span,
+    .playlist-container,
+    .install span
+     {          
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .install-app {
+        border: hidden;
+    }
+
+    .nav-container {
+        align-items: center;  
+                
+    }
+        
+    .small-logo {
+        display: inline-block;
+        width: 50px; 
+        padding-top: 5px;
+        padding-bottom:10px ;       
+    }
+
+    .main-links img {
+        width: 50px;
+    }
+
+    .install {
+        margin-top: 100px;
+    }
+          
 }
