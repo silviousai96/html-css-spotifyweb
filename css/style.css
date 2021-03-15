@@ -317,11 +317,82 @@ nav a {
     cursor: pointer;
   }
 
-/*FOOTER*/
-footer {
-    /*test*/
+
+  /*FOOTER*/
+
+footer {    
     background-color: #282828;
     height: 100px;
+    width: 100%;
+    padding-left: 10px;
+    display: flex;    
+    
+}
+
+/*footer-left*/
+.footer-left {
+    display: flex;    
+    align-items: center;
+    
+}
+
+.footer-left img {
+    width: 40px;    
+}
+
+.artist-song {
+    padding-left: 10px;
+}
+
+.i-left {
+    padding-left: 30px;
+}
+
+.fa-heart {
+    padding-right: 5px;
+}
+
+/*footer-center*/
+
+.footer-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 2;
+    
+}
+
+.footer-center a {
+    color: white;
+    padding-right: 20px;
+}
+
+.footer-center .fa-play-circle {
+    font-size: 30px;
+    padding: 0 10px;
+    
+}
+
+.fc-top {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.fc-bottom {
+    display: flex;
+    flex-direction: row ;
+}
+.time {    
+    font-size: 10px;
+    font-weight: bold;
+}
+/*footer-right*/
+
+.footer-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 
@@ -399,6 +470,7 @@ footer {
 
     .main-links img {
         width: 50px;
+        vertical-align: middle;
     }
 
     .install {
