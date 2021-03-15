@@ -68,6 +68,10 @@ ul {
     text-decoration: none;
 }
 
+.button:hover {
+    transform: scale(1.1);
+}
+
 /*MAIN*/
 main {
     height: calc( 100% -  100px );
@@ -325,8 +329,9 @@ footer {
     height: 100px;
     width: 100%;
     padding-left: 10px;
+    padding-right: 10px;
     display: flex;    
-    
+    justify-content: ;
 }
 
 /*footer-left*/
@@ -344,13 +349,20 @@ footer {
     padding-left: 10px;
 }
 
+
+
 .i-left {
     padding-left: 30px;
+}
+
+.i-left a i:hover {
+    color: white;
 }
 
 .fa-heart {
     padding-right: 5px;
 }
+
 
 /*footer-center*/
 
@@ -366,17 +378,23 @@ footer {
 .footer-center a {
     color: white;
     padding-right: 20px;
+    vertical-align: middle;
 }
 
-.footer-center .fa-play-circle {
+.fc-top {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.fc-top .fa-play-circle {
     font-size: 30px;
     padding: 0 10px;
     align-self: center;
 }
 
-.fc-top {
-    display: flex;
-    padding-bottom: 10px;
+.fc-top .fa-play-circle:hover {
+    transform: scale(1.1);
 }
 
 .fc-bottom {
@@ -386,22 +404,44 @@ footer {
 .time {    
     font-size: 10px;
     font-weight: bold;
+    padding: 0 10px;
 }
 
 
-.bar {
+.bar-song {
     width: 350px;
     height: 5px;
     background-color: #575757;
     border-radius: 20px;
     align-self: center;
+    
+}
+
+.bar-song:hover {
+    cursor: pointer;
 }
 
 .duration-bar {
     width: 50px;
     height: 5px;
-    color: #bcbcbc;
-    
+    background-color: #bcbcbc;  
+    position: relative;  
+}
+
+.duration-bar:hover {
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+.duration-bar:hover:before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 95%;
+    background-color: grey;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;    
 }
 
 /*footer-right*/
@@ -410,6 +450,7 @@ footer {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    
 }
 
 .footer-right a {
@@ -417,6 +458,41 @@ footer {
     padding-right: 20px;
 }
 
+.bar-volume {
+    width: 120px;
+    height: 5px;
+    background-color: #575757;
+    border-radius: 20px;
+    align-self: center;
+    
+}
+
+.bar-volume:hover {
+    cursor: pointer;
+}
+
+.duration-volume {
+    width: 40px;
+    height: 5px;
+    background-color: #bcbcbc;  
+    position: relative;  
+}
+
+.duration-volume:hover {
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+.duration-volume:hover:before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 95%;
+    background-color: grey;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;    
+}
 
 
 
