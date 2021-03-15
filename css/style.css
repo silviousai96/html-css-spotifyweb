@@ -371,7 +371,7 @@ footer {
 .footer-center .fa-play-circle {
     font-size: 30px;
     padding: 0 10px;
-    
+    align-self: center;
 }
 
 .fc-top {
@@ -387,6 +387,23 @@ footer {
     font-size: 10px;
     font-weight: bold;
 }
+
+
+.bar {
+    width: 350px;
+    height: 5px;
+    background-color: #575757;
+    border-radius: 20px;
+    align-self: center;
+}
+
+.duration-bar {
+    width: 50px;
+    height: 5px;
+    color: #bcbcbc;
+    
+}
+
 /*footer-right*/
 
 .footer-right {
@@ -395,6 +412,10 @@ footer {
     align-items: center;
 }
 
+.footer-right a {
+    color: white;
+    padding-right: 20px;
+}
 
 
 
